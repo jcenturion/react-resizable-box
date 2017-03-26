@@ -70,7 +70,7 @@
     ]
   },
   "files": [
-    "lib",
+    "lib"
   ],
   "dependencies": {
     "lodash.isequal": "^4.2.0"
