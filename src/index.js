@@ -117,6 +117,10 @@ export default class Resizable extends Component {
   }
 
   shouldComponentUpdate(nextProps, nextState) {
+    if (this.props.forceComponentUpdate) {
+      return true;
+    }
+
     return !isEqual(this.props, nextProps) || !isEqual(this.state, nextState);
   }
 
